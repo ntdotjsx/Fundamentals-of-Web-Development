@@ -1,7 +1,7 @@
 ---
 theme: default
 colorSchema: light
-title: ภาพรวมหลักสูตร — Fundamentals of Web Development (0% → 100% ใน 10 วัน)
+title: Fundamentals of Web Development (0% → 100% ใน 10 วัน)
 info: |
   ## Fundamentals of Web Development (0% → 100% ใน 10 วัน)
   หลักสูตรสำหรับมือใหม่จากศูนย์ จนสร้างระบบร้านคาเฟ่จริง (Mini Cafe Full-Stack)
@@ -14,4 +14,8 @@ transition: slide-left
 drawings:
   persist: false
 src: ./pages/00-overview.md
+---
+
+---
+src: ./pages/01-day1.md
 ---
