@@ -1,0 +1,235 @@
+:root {
+  --ink-white: #ffffff;
+  --ink-soft: rgba(255, 255, 255, 0.84);
+  --ink-muted: rgba(255, 255, 255, 0.62);
+  --hairline: rgba(255, 255, 255, 0.24);
+}
+
+/* Full-bleed Pastel Peach-to-Blue Wallpaper with subtle Keynote contrast veil */
+.slidev-layout {
+  background-image: url('/images/bg-gradient.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--ink-white);
+  font-family: 'IBM Plex Sans Thai', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding: 2.25rem 3.5rem 3.25rem;
+}
+
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.30) 0%,
+    rgba(30, 27, 75, 0.16) 52%,
+    rgba(15, 23, 42, 0.28) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slidev-layout > * {
+  position: relative;
+  z-index: 1;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  text-shadow: 0 2px 20px rgba(15, 23, 42, 0.18);
+}
+
+.slidev-layout p,
+.slidev-layout li,
+.slidev-layout td {
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.slidev-layout strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.slidev-layout :not(pre) > code {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 0.1rem 0.48rem;
+  border-radius: 0.45rem;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+/* Ultra-Thin visionOS / Keynote Frosted Glass */
+.thin-glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 40px -14px rgba(15, 23, 42, 0.22);
+}
+
+.eyebrow-mono {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'JetBrains Mono', 'IBM Plex Sans Thai', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 0.5rem;
+}
+
+.hairline-row {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.hairline-row:last-child {
+  border-bottom: none;
+}
+
+/* Crisp Logo Discs so colorful/dark brand SVGs pop on translucent backgrounds */
+.logo-chip {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem;
+  flex-shrink: 0;
+}
+
+.logo-chip img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-chip-sm {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 0.6rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.34rem;
+  flex-shrink: 0;
+}
+
+.logo-chip-sm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Dark macOS Code Editor Window */
+.code-window {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+  box-shadow: 0 26px 56px -14px rgba(15, 23, 42, 0.45);
+  overflow: hidden;
+}
+
+.code-window-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.code-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.42rem;
+}
+
+.code-dots span {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 9999px;
+}
+
+.code-window .slidev-code-wrapper,
+.code-window pre.slidev-code,
+.code-window .shiki-magic-move-container {
+  margin: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0.9rem 1.25rem !important;
+  font-size: 0.92rem !important;
+  line-height: 1.52 !important;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace !important;
+}
+
+.code-window .slidev-code .line.highlighted {
+  background: rgba(129, 140, 248, 0.24) !important;
+  border-left: 3px solid #a5b4fc;
+  margin-left: -1.25rem;
+  padding-left: calc(1.25rem - 3px);
+  margin-right: -1.25rem;
+  padding-right: 1.25rem;
+}
+
+.code-window .slidev-code.has-highlighted .line:not(.highlighted) {
+  opacity: 0.34;
+  transition: opacity 0.35s ease;
+}
+
+/* Smooth Keynote Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 4.8s ease-in-out infinite;
+}
+
+.animate-dash {
+  stroke-dasharray: 6 6;
+  animation: dashFlow 1.2s linear infinite;
+}
+
+.slidev-vclick-target {
+  transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slidev-vclick-hidden {
+  opacity: 0 !important;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
