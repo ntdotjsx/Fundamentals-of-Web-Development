@@ -19,3 +19,39 @@ src: ./pages/00-overview.md
 ---
 src: ./pages/01-day1.md
 ---
+
+---
+src: ./pages/02-day2.md
+---
+
+---
+src: ./pages/03-day3.md
+---
+
+---
+src: ./pages/04-day4.md
+---
+
+---
+src: ./pages/05-day5.md
+---
+
+---
+src: ./pages/06-day6.md
+---
+
+---
+src: ./pages/07-day7.md
+---
+
+---
+src: ./pages/08-day8.md
+---
+
+---
+src: ./pages/09-day9.md
+---
+
+---
+src: ./pages/10-day10.md
+---
